@@ -1,0 +1,28 @@
+true 'ssl-certs' '/home/csquan/work/blockchain-explorer/ssl-certs'
+postgres://hppoc:password@127.0.0.1:5432/fabricexplorer
+******* Initialization started for hyperledger fabric platform ******, { 'first-network': 
+   { name: 'first-network',
+     profile: './connection-profile/first-network.json' } }
+ client_configs.name  first-network  client_configs.profile  ./connection-profile/first-network.json
+FabricUtils.createFabricClient 
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+
+ ********* call to initializeDetachClient **********
+{ name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+initializeDetachClient --> client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }  name  first-network
+FabricConfig, this.config.channels  mychannel
+FabricUtils.createDetachClient 
+
+
+Please open web browser to access ：https://localhost:8080/
+
+
+pid is 11407
+
+
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections

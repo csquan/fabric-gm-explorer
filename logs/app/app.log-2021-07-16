@@ -1,0 +1,1264 @@
+[2021-07-16 09:07:40.782] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:07:40.784] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:07:40.785] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:07:40.786] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:07:40.786] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:07:40.788] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:07:40.788] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:07:40.788] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:07:40.788] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:07:40.788] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:07:40.788] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:07:40.791] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:07:40.791] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:07:41.697] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139910311675712:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139910311675712:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139910311675712:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:07:41.697] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139910311675712:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139910311675712:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139910311675712:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:07:41.783] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-16 09:07:41.783] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-16 09:07:41.784] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-16 09:07:41.784] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:07:41.785] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:07:41.789] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 09:15:21.520] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:15:21.522] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:15:21.522] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:15:21.523] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:15:21.524] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:15:21.525] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:15:21.525] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:15:21.525] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:15:21.525] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:15:21.525] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:15:21.525] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:15:21.528] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:15:21.528] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:15:22.054] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140256532449088:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140256532449088:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140256532449088:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:15:22.054] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140256532449088:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140256532449088:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140256532449088:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:15:22.161] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:15:22.161] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:15:22.163] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-16 09:15:22.163] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:15:22.164] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:15:22.175] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 09:18:09.721] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:18:09.722] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:18:09.723] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:18:09.724] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:18:09.724] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:18:09.726] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:18:09.726] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:18:09.726] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:18:09.726] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:18:09.727] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:18:09.727] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:18:09.729] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:18:09.729] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-16 09:18:10.258] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139893927163712:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139893927163712:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139893927163712:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:18:10.258] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139893927163712:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139893927163712:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139893927163712:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-16 09:18:10.271] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:18:10.271] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:18:10.272] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-16 09:18:10.273] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:18:10.273] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:18:10.287] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 09:24:57.895] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:24:57.897] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:24:57.898] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:24:57.899] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:24:57.899] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:24:57.901] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:24:57.901] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:24:57.901] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:24:57.901] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:24:57.902] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:24:57.902] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:24:58.216] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:24:58.216] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-16 09:24:58.218] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-16 09:24:58.219] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:24:58.219] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:24:58.232] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 09:27:09.531] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:27:09.533] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:27:09.533] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:27:09.534] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:27:09.534] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:27:09.537] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:27:09.537] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:27:09.537] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:27:09.537] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:27:09.538] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:27:09.538] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:27:09.540] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 09:27:09.541] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:27:09.541] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:27:09.567] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 09:31:56.192] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 09:31:56.195] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 09:31:56.196] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 09:31:56.198] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 09:31:56.199] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 09:31:56.202] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:31:56.202] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 09:31:56.203] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:31:56.203] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 09:31:56.203] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:31:56.203] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 09:31:56.210] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 09:31:56.210] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 09:31:56.210] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 09:31:56.223] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 10:07:49.825] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 10:07:49.826] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 10:07:49.827] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 10:07:49.828] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 10:07:49.828] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 10:07:49.830] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:07:49.830] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:07:49.830] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:07:49.830] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:07:49.831] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:07:49.831] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:07:49.834] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 10:07:49.835] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 10:07:49.835] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 10:07:49.842] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 10:08:20.111] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 10:08:20.113] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 10:08:20.113] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 10:08:20.113] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 10:08:20.114] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 10:08:20.115] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:08:20.115] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:08:20.115] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:08:20.115] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:08:20.116] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:08:20.116] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:08:20.118] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 10:08:20.119] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 10:08:20.119] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 10:08:20.127] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 10:22:18.613] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 10:22:18.614] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 10:22:18.615] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 10:22:18.616] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 10:22:18.617] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 10:22:18.618] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:22:18.618] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:22:18.618] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:22:18.618] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:22:18.619] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:22:18.619] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:22:18.622] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 10:22:18.623] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 10:22:18.623] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 10:22:18.630] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 10:57:18.942] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 10:57:18.944] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 10:57:18.944] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 10:57:18.945] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 10:57:18.945] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 10:57:18.947] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:57:18.947] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 10:57:18.948] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:57:18.948] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 10:57:18.949] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:57:18.949] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 10:57:18.952] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 10:57:18.953] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 10:57:18.953] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 10:57:18.958] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 11:20:20.443] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 11:20:20.444] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 11:20:20.445] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 11:20:20.445] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 11:20:20.446] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 11:20:20.447] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 11:20:20.447] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 11:20:20.447] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 11:20:20.447] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 11:20:20.447] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 11:20:20.447] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 11:20:20.450] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 11:20:20.451] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 11:20:20.451] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 11:20:20.456] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 11:33:59.288] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 11:33:59.289] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 11:35:31.930] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 11:35:31.932] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 11:35:31.932] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 11:35:31.933] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 11:35:31.933] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 11:35:31.935] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 11:35:31.935] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 11:35:31.936] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 11:35:31.936] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 11:35:31.936] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 11:35:31.936] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 11:35:31.939] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 11:35:31.940] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 11:35:31.940] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 11:35:31.947] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 13:33:15.581] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 13:33:15.586] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 13:33:15.588] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 13:33:15.591] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 13:33:15.593] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 13:33:15.596] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:33:15.596] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:33:15.597] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:33:15.597] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:33:15.597] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:33:15.597] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:33:20.659] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 13:33:20.660] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 13:33:20.660] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 13:33:20.672] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 13:46:38.459] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 13:46:38.460] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 13:46:38.461] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 13:46:38.462] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 13:46:38.462] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 13:46:38.464] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:46:38.464] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:46:38.465] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:46:38.465] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:46:38.465] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:46:38.465] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:46:38.468] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 13:46:38.469] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 13:46:38.469] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 13:46:38.476] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 13:54:25.645] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 13:54:25.646] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 13:54:25.647] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 13:54:25.647] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 13:54:25.648] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 13:54:25.651] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:54:25.651] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 13:54:25.651] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:54:25.651] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 13:54:25.651] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:54:25.651] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 13:54:25.655] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 13:54:25.656] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 13:54:25.656] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 13:54:25.663] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:13:19.385] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:13:19.386] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:13:19.386] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:13:19.387] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:13:19.387] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:13:19.389] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:13:19.389] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:13:19.389] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:13:19.389] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:13:19.389] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:13:19.389] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:13:19.390] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:13:19.391] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:13:19.391] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:13:19.394] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:17:07.619] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:17:07.620] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:17:07.623] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:17:07.624] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:17:07.625] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:17:07.626] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:17:07.626] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:17:07.626] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:17:07.626] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:17:07.627] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:17:07.627] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:17:07.630] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:17:07.631] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:17:07.632] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:17:07.640] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:27:01.886] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:27:01.887] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:27:01.888] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:27:01.889] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:27:01.891] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:27:01.894] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:27:01.894] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:27:01.894] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:27:01.894] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:27:01.895] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:27:01.895] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:27:01.898] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:27:01.899] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:27:01.899] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:27:01.905] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:27:29.068] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:27:29.069] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:27:29.070] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:27:29.071] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:27:29.072] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:27:29.073] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:27:29.073] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:27:29.073] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:27:29.073] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:27:29.074] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:27:29.074] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:27:29.077] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:27:29.078] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:27:29.078] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:27:29.083] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:27:36.357] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:27:36.360] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:28:13.248] [INFO] FabricGateway - user =  admin
+[2021-07-16 14:28:13.248] [INFO] FabricGateway - user =  admin
+[2021-07-16 14:28:13.251] [INFO] FabricGateway - password =  pass
+[2021-07-16 14:28:13.251] [INFO] FabricGateway - password =  pass
+[2021-07-16 14:28:13.251] [INFO] FabricGateway - network =  first-network
+[2021-07-16 14:28:13.251] [INFO] FabricGateway - network =  first-network
+[2021-07-16 14:28:13.254] [INFO] UserService - first-network
+[2021-07-16 14:28:13.254] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 14:32:03.867] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:32:03.868] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:32:03.869] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:32:03.870] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:32:03.871] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:32:03.873] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:32:03.873] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:32:03.874] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:32:03.874] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:32:03.874] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:32:03.874] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:32:03.877] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:32:03.878] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:32:03.878] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:32:03.884] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:32:08.232] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:32:08.234] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:32:38.793] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:32:38.795] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:32:38.795] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:32:38.796] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:32:38.797] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:32:38.800] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:32:38.800] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:32:38.800] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:32:38.800] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:32:38.800] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:32:38.800] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:32:38.805] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:32:38.806] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:32:38.806] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:32:38.812] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:32:47.172] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:32:47.173] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:33:52.000] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:33:52.001] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:33:52.002] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:33:52.002] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:33:52.003] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:33:52.005] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:33:52.005] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:33:52.005] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:33:52.005] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:33:52.006] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:33:52.006] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:33:52.009] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:33:52.010] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:33:52.010] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:33:52.017] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:33:58.719] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:33:58.721] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:33:58.911] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:33:58.915] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:34:59.374] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:35:59.408] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:37:05.684] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:37:05.685] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:37:05.686] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:37:05.686] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:37:05.688] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:37:05.690] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:37:05.690] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:37:05.691] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:37:05.691] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:37:05.692] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:37:05.692] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:37:05.695] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:37:05.696] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:37:05.696] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:37:05.702] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:37:15.416] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:37:15.418] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:37:15.676] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:37:15.710] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:38:26.954] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:38:26.955] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:38:26.955] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:38:26.957] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:38:26.958] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:38:26.960] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:38:26.960] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:38:26.960] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:38:26.960] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:38:26.961] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:38:26.961] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:38:26.965] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:38:26.966] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:38:26.966] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:38:26.974] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:38:43.667] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:38:43.669] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:38:43.871] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:38:43.903] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:39:44.278] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:43:37.834] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 14:43:37.836] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 14:43:37.837] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 14:43:37.838] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 14:43:37.838] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 14:43:37.841] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:43:37.841] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 14:43:37.849] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:43:37.849] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 14:43:37.849] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:43:37.849] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 14:43:37.853] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 14:43:37.854] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 14:43:37.854] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 14:43:37.862] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 14:43:42.211] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:43:42.213] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:43:42.608] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:43:42.625] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:43:57.830] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:43:57.830] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:43:58.009] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:43:58.026] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:44:10.418] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:44:10.419] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:44:10.602] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:44:10.614] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:44:38.701] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:44:38.702] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:44:38.856] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:44:38.866] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:45:09.301] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:45:09.301] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:45:09.503] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:45:09.524] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:45:13.094] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:45:13.099] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:45:13.275] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:45:13.293] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:45:31.976] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:45:31.976] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:45:32.415] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:45:32.447] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:48:20.800] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:48:20.800] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:48:20.967] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:48:20.986] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:52:28.172] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:52:28.172] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:52:28.310] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:52:28.330] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 14:57:06.168] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 14:57:06.168] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 14:57:07.373] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 14:57:07.432] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 15:03:17.708] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:03:17.709] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:03:17.709] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:03:17.710] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:03:17.710] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:03:17.712] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:03:17.712] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:03:17.713] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:03:17.713] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:03:17.713] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:03:17.713] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:03:17.715] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:03:17.717] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:03:17.717] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:03:17.722] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:05:06.095] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:05:06.097] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:05:18.667] [INFO] FabricGateway - user =  admin
+[2021-07-16 15:05:18.667] [INFO] FabricGateway - user =  admin
+[2021-07-16 15:05:18.668] [INFO] FabricGateway - password =  pass
+[2021-07-16 15:05:18.668] [INFO] FabricGateway - password =  pass
+[2021-07-16 15:05:18.668] [INFO] FabricGateway - network =  first-network
+[2021-07-16 15:05:18.668] [INFO] FabricGateway - network =  first-network
+[2021-07-16 15:05:18.668] [INFO] UserService - first-network
+[2021-07-16 15:05:18.668] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 15:05:18.853] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 15:05:18.857] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 15:13:55.570] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:13:55.572] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:13:55.572] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:13:55.573] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:13:55.574] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:13:55.576] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:13:55.576] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:13:55.577] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:13:55.577] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:13:55.577] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:13:55.577] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:13:55.579] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:13:55.580] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:13:55.580] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:13:55.585] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:14:01.044] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:14:01.045] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:14:01.641] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 15:14:01.645] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 15:20:36.863] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:20:36.865] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:20:36.865] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:20:36.866] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:20:36.867] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:20:36.868] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:20:36.868] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:20:36.868] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:20:36.868] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:20:36.869] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:20:36.869] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:20:36.871] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:20:36.872] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:20:36.872] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:20:36.879] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:20:49.452] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:20:49.453] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:20:49.729] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 15:20:49.739] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 15:30:43.152] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:30:43.153] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:30:43.153] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:30:43.153] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:30:43.154] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:30:43.158] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:30:43.158] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:30:43.159] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:30:43.159] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:30:43.159] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:30:43.159] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:30:43.163] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:30:43.164] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:30:43.164] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:30:43.168] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:31:51.184] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:31:51.186] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:32:10.548] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:32:10.548] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:32:36.518] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:32:36.519] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:33:21.358] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:33:21.358] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:33:29.440] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:33:29.440] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:35:29.894] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 15:35:43.483] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:35:43.483] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:38:29.113] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:38:29.115] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:38:29.115] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:38:29.116] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:38:29.116] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:38:29.118] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:38:29.118] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:38:29.119] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:38:29.119] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:38:29.119] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:38:29.119] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:38:29.121] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:38:29.124] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:38:29.124] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:38:29.130] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:38:36.018] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:38:36.020] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:39:06.324] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:39:06.325] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:39:30.082] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:39:30.082] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:43:18.451] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:43:18.455] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:43:18.455] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:43:18.456] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:43:18.456] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:43:18.463] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:43:18.463] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:43:18.463] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:43:18.463] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:43:18.464] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:43:18.464] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:43:18.468] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:43:18.468] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:43:18.469] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:43:18.482] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:43:20.813] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:43:20.814] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:43:30.006] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:43:30.006] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:44:08.778] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:44:08.778] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:46:18.091] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:46:18.092] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:48:06.501] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:48:06.507] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:50:18.705] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:50:18.712] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:50:18.715] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:50:18.717] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:50:18.720] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:50:18.721] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:50:18.721] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:50:18.721] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:50:18.721] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:50:18.721] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:50:18.721] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:50:18.728] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:50:18.730] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:50:18.730] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:50:18.736] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:50:31.210] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:50:31.215] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:54:33.711] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 15:54:33.712] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 15:54:33.713] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 15:54:33.713] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 15:54:33.714] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 15:54:33.716] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:54:33.716] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 15:54:33.718] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:54:33.718] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 15:54:33.719] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:54:33.719] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 15:54:33.721] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 15:54:33.722] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 15:54:33.722] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 15:54:33.728] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 15:59:19.353] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 15:59:19.354] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 15:59:31.041] [INFO] FabricGateway - user =  admin
+[2021-07-16 15:59:31.041] [INFO] FabricGateway - user =  admin
+[2021-07-16 15:59:31.042] [INFO] FabricGateway - password =  pass
+[2021-07-16 15:59:31.042] [INFO] FabricGateway - password =  pass
+[2021-07-16 15:59:31.042] [INFO] FabricGateway - network =  first-network
+[2021-07-16 15:59:31.042] [INFO] FabricGateway - network =  first-network
+[2021-07-16 15:59:31.043] [INFO] UserService - first-network
+[2021-07-16 15:59:31.043] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 16:04:46.892] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:04:46.893] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:06:49.570] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:06:49.570] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:08:05.001] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 16:08:05.002] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 16:08:05.003] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 16:08:05.004] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 16:08:05.004] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 16:08:05.005] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:08:05.005] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:08:05.006] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:08:05.006] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:08:05.006] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:08:05.006] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:08:05.008] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 16:08:05.009] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 16:08:05.009] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 16:08:05.014] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 16:08:29.229] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:08:29.231] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:08:29.414] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 16:08:29.469] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 16:15:35.991] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 16:15:35.995] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 16:15:35.999] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 16:15:36.000] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 16:15:36.000] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 16:15:36.004] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:15:36.004] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:15:36.005] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:15:36.005] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:15:36.005] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:15:36.005] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:15:36.008] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 16:15:36.008] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 16:15:36.009] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 16:15:36.014] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 16:15:43.044] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:15:43.045] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:15:43.305] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 16:15:43.306] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 16:15:53.289] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:15:53.290] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:15:53.578] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 16:15:53.582] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 16:16:31.673] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:16:31.674] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:16:41.935] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:16:41.935] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:16:41.945] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:16:41.945] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:16:41.946] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:16:41.946] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:16:41.947] [INFO] UserService - first-network
+[2021-07-16 16:16:41.947] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 16:16:42.275] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 16:16:42.280] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 16:17:43.098] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 16:17:43.100] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 16:17:43.102] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 16:17:43.102] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 16:17:43.103] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 16:17:43.124] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:17:43.124] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:17:43.124] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:17:43.124] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:17:43.125] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:17:43.125] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:17:43.130] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 16:17:43.134] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 16:17:43.135] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 16:17:43.145] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 16:17:51.042] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:17:51.055] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:17:59.139] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:17:59.139] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:17:59.140] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:17:59.140] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:17:59.140] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:17:59.140] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:17:59.141] [INFO] UserService - first-network
+[2021-07-16 16:17:59.141] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 16:17:59.528] [DEBUG] Proxy - getChannels >> []
+[2021-07-16 16:17:59.532] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-16 16:25:39.764] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-16 16:25:39.766] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-16 16:25:39.766] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-16 16:25:39.767] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-16 16:25:39.767] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-16 16:25:39.768] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:25:39.768] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-16 16:25:39.768] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:25:39.768] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-16 16:25:39.769] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:25:39.769] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-16 16:25:39.772] [ERROR] FabricClient - TypeError: Cannot read property 'setConfigSetting' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:82:20)
+    at <anonymous>
+[2021-07-16 16:25:39.773] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-16 16:25:39.773] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-16 16:25:39.780] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-16 16:25:46.667] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:25:46.669] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:26:11.911] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 16:26:11.912] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 16:26:18.224] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:26:18.224] [INFO] FabricGateway - user =  admin
+[2021-07-16 16:26:18.225] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:26:18.225] [INFO] FabricGateway - password =  pass
+[2021-07-16 16:26:18.225] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:26:18.225] [INFO] FabricGateway - network =  first-network
+[2021-07-16 16:26:18.226] [INFO] UserService - first-network
+[2021-07-16 16:26:18.226] [DEBUG] Proxy - login >> [object Object]
+[2021-07-16 17:37:35.677] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 17:37:35.678] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 17:37:53.941] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-16 17:37:53.941] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-16 17:38:06.020] [INFO] FabricGateway - user =  admin
+[2021-07-16 17:38:06.020] [INFO] FabricGateway - user =  admin
+[2021-07-16 17:38:06.021] [INFO] FabricGateway - password =  pass
+[2021-07-16 17:38:06.021] [INFO] FabricGateway - password =  pass
+[2021-07-16 17:38:06.021] [INFO] FabricGateway - network =  first-network
+[2021-07-16 17:38:06.021] [INFO] FabricGateway - network =  first-network
+[2021-07-16 17:38:06.022] [INFO] UserService - first-network
+[2021-07-16 17:38:06.022] [DEBUG] Proxy - login >> [object Object]

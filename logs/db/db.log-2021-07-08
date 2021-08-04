@@ -1,0 +1,49 @@
+[2021-07-08 09:21:58.708] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 09:22:07.502] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 09:35:06.813] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 09:35:15.441] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 09:38:00.240] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 09:38:08.904] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 09:42:53.324] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 09:43:02.048] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 10:45:33.306] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 10:47:52.658] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 10:48:01.521] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 10:56:10.105] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 10:56:12.052] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 14:07:37.494] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 14:07:39.468] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 14:08:21.745] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 14:08:23.561] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 14:11:53.937] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 14:12:02.914] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 14:24:01.586] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 14:24:10.265] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 14:25:08.469] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 14:25:17.147] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 15:23:18.068] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 15:24:53.668] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 15:24:59.703] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 15:25:14.028] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 15:28:05.555] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 15:28:08.051] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 17:01:27.290] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 17:11:08.061] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 17:11:11.002] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2021-07-08 17:19:04.556] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-08 17:23:02.467] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.

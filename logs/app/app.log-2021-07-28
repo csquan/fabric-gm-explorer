@@ -1,0 +1,190 @@
+[2021-07-28 16:52:35.151] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-28 16:52:35.152] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-28 16:52:35.152] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-28 16:52:35.153] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-28 16:52:35.153] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-28 16:52:35.154] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-28 16:52:35.154] [DEBUG] FabricClient - Client channels >> [{"channel_id":"mychannel"}]
+[2021-07-28 16:52:35.154] [DEBUG] FabricClient - Initializing channel  mychannel
+[2021-07-28 16:52:35.154] [DEBUG] FabricClient - Initialized channel >> mychannel
+[2021-07-28 16:52:35.168] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-28 16:52:35.331] [DEBUG] Sync - Start synchronizer
+[2021-07-28 16:52:35.413] [DEBUG] Synchronizer -  Synchronizer initialized
+[2021-07-28 16:52:36.725] [DEBUG] SyncPlatform - ******* Initialization started for child client process null ******
+[2021-07-28 16:52:36.729] [DEBUG] SyncPlatform - Blocks synch interval time >> 60000
+[2021-07-28 16:52:36.730] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-28 16:52:36.731] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-28 16:52:36.752] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-28 16:52:36.752] [DEBUG] FabricClient - Client channels >> [{"channel_id":"mychannel"}]
+[2021-07-28 16:52:36.752] [DEBUG] FabricClient - Initializing channel  mychannel
+[2021-07-28 16:52:36.752] [DEBUG] FabricClient - Initialized channel >> mychannel
+[2021-07-28 16:52:36.761] [DEBUG] FabricEvent - disconnectEventHubs()
+[2021-07-28 16:53:00.271] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-28 16:53:00.272] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-28 16:53:06.310] [INFO] FabricGateway - user =  admin
+[2021-07-28 16:53:06.310] [INFO] FabricGateway - user =  admin
+[2021-07-28 16:53:06.311] [INFO] FabricGateway - password =  pass
+[2021-07-28 16:53:06.311] [INFO] FabricGateway - password =  pass
+[2021-07-28 16:53:06.324] [INFO] FabricGateway - network =  first-network
+[2021-07-28 16:53:06.324] [INFO] FabricGateway - network =  first-network
+[2021-07-28 16:53:06.325] [INFO] UserService - first-network
+[2021-07-28 16:53:06.325] [DEBUG] Proxy - login >> [object Object]
+[2021-07-28 16:53:06.795] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:53:06.804] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:53:06.806] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:53:06.847] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:53:06.848] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:54:07.307] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:54:07.610] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:54:07.610] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:54:07.904] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:54:07.915] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:54:07.915] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:55:07.301] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:55:07.602] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:55:07.603] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:55:07.899] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:55:07.915] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:55:07.915] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:56:07.305] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:56:07.547] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:56:07.548] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:56:07.828] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:56:07.835] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:56:07.837] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:57:07.303] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:57:07.322] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:57:07.323] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:57:07.809] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:57:07.820] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:57:07.820] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:58:07.316] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:58:07.598] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:58:07.599] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:58:07.883] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:58:07.910] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:58:07.911] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:59:07.303] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 16:59:07.515] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:59:07.516] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 16:59:07.808] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 16:59:07.821] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 16:59:07.822] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 17:07:31.912] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-28 17:07:31.914] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-28 17:07:31.914] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-28 17:07:31.915] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-28 17:07:31.915] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-28 17:07:31.916] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-28 17:07:31.916] [DEBUG] FabricClient - Client channels >> [{"channel_id":"mychannel"}]
+[2021-07-28 17:07:31.916] [DEBUG] FabricClient - Initializing channel  mychannel
+[2021-07-28 17:07:31.916] [DEBUG] FabricClient - Initialized channel >> mychannel
+[2021-07-28 17:07:31.930] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-28 17:07:32.077] [DEBUG] Sync - Start synchronizer
+[2021-07-28 17:07:32.132] [DEBUG] Synchronizer -  Synchronizer initialized
+[2021-07-28 17:07:33.419] [DEBUG] SyncPlatform - ******* Initialization started for child client process null ******
+[2021-07-28 17:07:33.422] [DEBUG] SyncPlatform - Blocks synch interval time >> 60000
+[2021-07-28 17:07:33.423] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-28 17:07:33.424] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-28 17:07:33.428] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-28 17:07:33.428] [DEBUG] FabricClient - Client channels >> [{"channel_id":"mychannel"}]
+[2021-07-28 17:07:33.428] [DEBUG] FabricClient - Initializing channel  mychannel
+[2021-07-28 17:07:33.428] [DEBUG] FabricClient - Initialized channel >> mychannel
+[2021-07-28 17:07:33.433] [DEBUG] FabricEvent - disconnectEventHubs()
+[2021-07-28 17:08:02.251] [INFO] NetworkService - [ [ 'first-network', Map { 'first-network' => [Object] } ] ]
+[2021-07-28 17:08:02.253] [DEBUG] Proxy - networkList >> first-network,[object Map]
+[2021-07-28 17:08:06.853] [INFO] FabricGateway - user =  admin
+[2021-07-28 17:08:06.853] [INFO] FabricGateway - user =  admin
+[2021-07-28 17:08:06.854] [INFO] FabricGateway - password =  pass
+[2021-07-28 17:08:06.854] [INFO] FabricGateway - password =  pass
+[2021-07-28 17:08:06.854] [INFO] FabricGateway - network =  first-network
+[2021-07-28 17:08:06.854] [INFO] FabricGateway - network =  first-network
+[2021-07-28 17:08:06.855] [INFO] UserService - first-network
+[2021-07-28 17:08:06.855] [DEBUG] Proxy - login >> [object Object]
+[2021-07-28 17:08:07.076] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 17:08:07.101] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 17:08:07.104] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 17:08:07.302] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 17:08:07.303] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 17:09:07.559] [DEBUG] Proxy - getChannelsInfo >> []
+[2021-07-28 17:09:07.853] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 17:09:07.854] [DEBUG] Proxy - getPeersStatus >> 0
+[2021-07-28 17:09:07.868] [DEBUG] Proxy - changeChannel >> undefined
+[2021-07-28 17:09:08.120] [DEBUG] Proxy - getPeersStatus >>  TypeError: Cannot read property 'getChannel' of null
+    at FabricClient.initializeChannelFromDiscover (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:418:33)
+    at Proxy.getPeersStatus (/home/csquan/work/blockchain-explorer/app/platform/fabric/Proxy.js:113:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2021-07-28 17:09:08.120] [DEBUG] Proxy - getPeersStatus >> 0

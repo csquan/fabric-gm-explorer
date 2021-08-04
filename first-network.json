@@ -1,0 +1,96 @@
+{
+	"name": "first-network",
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"client": {
+		"tlsEnable": false,
+		"adminUser": "admin",
+		"adminPassword": "adminpw",
+		"enableAuthentication": false,
+		"organization": "org1MSP",
+		"connection": {
+			"timeout": {
+				"peer": {
+					"endorser": "300"
+				},
+				"orderer": "300"
+			}
+		},
+		"credentialStore":{
+			"cryptoStore":{
+			              "path": "/tmp/hfc-msp"
+				}
+		},
+		"cryptoconfig": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config"
+	},
+	"channels": {
+		"mychannel": {
+			"peers": {
+				"peer0.org1.example.com": {}
+			},
+			"orderers":{
+				"orderer.example.com":{}
+			},
+			"connection": {
+				"timeout": {
+					"peer": {
+						"endorser": "6000",
+						"eventHub": "6000",
+						"eventReg": "6000"
+					}
+				}
+			}
+		}
+	},
+	"organizations": {
+		"org1MSP": {
+			"mspid": "org1MSP",
+			"fullpath": true,
+			"adminPrivateKey": {
+				"path": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk"
+			},
+			"signedCert": {
+				"path": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem"
+			}
+		}
+	},
+	"peers": {
+		"peer0.org1.example.com": {
+			"tlsCACerts": {
+				"path": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem"
+			},
+			"url": "grpcs://127.0.0.1:7051",
+			"eventUrl": "grpcs://127.0.0.1:7053",
+			"grpcOptions": {
+				"ssl-target-name-override": "peer0.org1.example.com"
+			}
+		}
+	},
+	"orderers":{
+		"orderer.example.com":{
+			"tlsCACerts": {
+				"path": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/ordererOrganizations/example.com/tlsca/tlsca.example.com-cert.pem"
+			},
+			"url": "grpcs://127.0.0.1:7050",
+			"grpcOptions": {
+				"ssl-target-name-override": "orderer.example.com"
+			}
+		}
+	},
+        "certificateAuthorities": {
+		 "ca.org1.example.com": {
+			"url": "https://127.0.0.1:7054",
+			"httpOptions": {
+				"verify": false
+			},
+			"tlsCACerts": {
+				"path": "/root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/tlsca/tlsca.org1.example.com-cert.pem"
+			},
+			"caName": "ca.org1.example.com",
+			"registrar": {
+				"enrollId": "admin",
+				"enrollSecret": "adminpw"
+			}
+		 	}
+	}
+}

@@ -1,0 +1,1070 @@
+[2021-07-13 09:09:06.388] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 09:09:06.404] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 09:09:06.410] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 09:09:06.410] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 09:09:06.411] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 09:09:06.418] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:09:06.418] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:09:06.419] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 09:09:06.419] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 09:09:06.420] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 09:09:06.420] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 09:09:06.431] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 09:09:06.431] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 09:09:08.374] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139875177494336:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139875177494336:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139875177494336:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 09:09:08.374] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139875177494336:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139875177494336:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139875177494336:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 09:09:08.574] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 09:09:08.574] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 09:09:08.579] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 09:09:08.579] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 09:09:08.579] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 09:09:08.613] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 09:22:57.974] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 09:22:57.979] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 09:22:57.983] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 09:22:57.985] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 09:22:57.986] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 09:22:57.989] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:22:57.989] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:22:57.990] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 09:22:57.990] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 09:24:23.923] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 09:24:23.966] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 09:24:23.978] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 09:24:23.983] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 09:24:23.983] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 09:24:24.002] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:24:24.002] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 09:24:24.002] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 10:18:12.268] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 10:18:12.273] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 10:18:12.275] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 10:18:12.276] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 10:18:12.276] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 10:18:12.281] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 10:18:12.281] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 10:18:12.281] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 10:18:12.281] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 10:18:12.283] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 10:18:12.283] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 10:18:12.296] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 10:18:12.296] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 10:18:13.320] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139759975905088:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139759975905088:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139759975905088:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 10:18:13.320] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139759975905088:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139759975905088:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139759975905088:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 10:18:13.399] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 10:18:13.399] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 10:18:13.399] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 10:18:13.399] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 10:18:13.399] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 10:18:13.413] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 11:01:42.225] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 11:01:42.228] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 11:01:42.229] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 11:01:42.234] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 11:01:42.235] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 11:01:42.241] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:01:42.241] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:01:42.242] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:01:42.242] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:01:42.246] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:01:42.246] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:01:42.256] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:01:42.256] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:01:43.482] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140078727399232:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140078727399232:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140078727399232:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:01:43.482] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140078727399232:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140078727399232:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140078727399232:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:01:43.577] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 11:01:43.577] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 11:01:43.577] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 11:01:43.578] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 11:01:43.578] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 11:01:43.590] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 11:03:25.141] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 11:03:25.146] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 11:03:25.148] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 11:03:25.150] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 11:03:25.150] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 11:03:25.157] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:03:25.157] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:03:25.157] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:03:25.157] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:03:25.159] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:03:25.159] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:03:25.169] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:03:25.169] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:03:26.105] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140568126818112:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140568126818112:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140568126818112:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:03:26.105] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140568126818112:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140568126818112:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140568126818112:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.request.on (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClient.js:487:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:03:26.210] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-13 11:03:26.210] [ERROR] FabricGateway -  Error: Does not understand PEM contents other than ECDSA private keys and certificates
+[2021-07-13 11:03:26.214] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 11:03:26.215] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 11:03:26.215] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 11:03:26.237] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 11:15:15.866] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 11:15:15.872] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 11:15:15.875] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 11:15:15.876] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 11:15:15.876] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 11:15:15.885] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:15:15.885] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 11:15:15.890] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:15:15.890] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 11:15:15.890] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:15:15.890] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 11:15:15.902] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:15:15.902] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 11:15:16.948] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140166237816640:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140166237816640:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140166237816640:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:15:16.948] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140166237816640:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140166237816640:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140166237816640:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 11:15:17.060] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 11:15:17.060] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 11:15:17.062] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 11:15:17.062] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 11:15:17.062] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 11:15:17.089] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 13:25:38.730] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 13:25:38.734] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 13:25:38.738] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 13:25:38.738] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 13:25:38.739] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 13:25:38.748] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 13:25:38.748] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 13:25:38.749] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 13:25:38.749] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 13:25:38.749] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 13:25:38.749] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 13:25:38.762] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 13:25:38.762] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 13:25:40.266] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140424104224576:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140424104224576:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140424104224576:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 13:25:40.266] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140424104224576:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140424104224576:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140424104224576:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 13:25:40.348] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 13:25:40.348] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 13:25:40.349] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 13:25:40.349] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 13:25:40.349] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 13:25:40.368] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 13:29:21.987] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 13:29:21.991] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 13:29:21.994] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 13:29:21.994] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 13:29:21.998] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 13:29:22.002] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 13:29:22.002] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 13:29:22.002] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 13:29:22.002] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 13:29:22.004] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 13:29:22.004] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 13:29:22.015] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 13:29:22.015] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 13:29:22.967] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140082432341824:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140082432341824:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140082432341824:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 13:29:22.967] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140082432341824:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140082432341824:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140082432341824:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 13:29:23.047] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 13:29:23.047] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 13:29:23.048] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 13:29:23.048] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 13:29:23.048] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 13:29:23.062] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 14:35:41.009] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 14:35:41.011] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 14:35:41.012] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 14:35:41.012] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 14:35:41.013] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 14:35:41.048] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:35:41.048] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:35:41.048] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:35:41.048] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:35:41.048] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:35:41.048] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:35:41.076] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:35:41.076] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:35:42.712] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140610095056704:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140610095056704:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140610095056704:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:35:42.712] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140610095056704:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140610095056704:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140610095056704:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:35:43.117] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:35:43.117] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:35:43.118] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 14:35:43.118] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 14:35:43.119] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 14:35:43.141] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 14:40:16.577] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 14:40:16.578] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 14:40:16.579] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 14:40:16.579] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 14:40:16.580] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 14:40:16.581] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:40:16.581] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:40:16.582] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:40:16.582] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:40:16.582] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:40:16.582] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:40:16.585] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:40:16.585] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:40:17.569] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140115619325760:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140115619325760:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140115619325760:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:40:17.569] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140115619325760:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140115619325760:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140115619325760:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:40:17.648] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:40:17.648] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:40:17.649] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 14:40:17.650] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 14:40:17.650] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 14:40:17.666] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 14:59:05.299] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 14:59:05.301] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 14:59:05.301] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 14:59:05.302] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 14:59:05.303] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 14:59:05.304] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:59:05.304] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 14:59:05.305] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:59:05.305] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 14:59:05.305] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:59:05.305] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 14:59:05.308] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:59:05.308] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 14:59:06.127] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139651493291840:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139651493291840:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139651493291840:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:59:06.127] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139651493291840:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139651493291840:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139651493291840:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 14:59:06.225] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:59:06.225] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 14:59:06.227] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 14:59:06.228] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 14:59:06.228] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 14:59:06.246] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 15:12:19.111] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 15:12:19.113] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 15:12:19.114] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 15:12:19.114] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 15:12:19.115] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 15:12:19.116] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:12:19.116] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:12:19.117] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:12:19.117] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:12:19.117] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:12:19.117] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:12:19.122] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:12:19.122] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:12:20.165] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140312985368384:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140312985368384:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140312985368384:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:12:20.165] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140312985368384:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140312985368384:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140312985368384:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:891:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:12:20.273] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:12:20.273] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:12:20.274] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 15:12:20.275] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 15:12:20.275] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 15:12:20.288] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 15:45:51.014] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 15:45:51.026] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 15:45:51.029] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 15:45:51.031] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 15:45:51.032] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 15:45:51.039] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:45:51.039] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:45:51.051] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:45:51.051] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:45:51.051] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:45:51.051] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:45:51.064] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:45:51.064] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:45:52.394] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140090781886272:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140090781886272:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140090781886272:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:45:52.394] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140090781886272:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140090781886272:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140090781886272:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:45:52.487] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:45:52.487] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:45:52.488] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 15:45:52.488] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 15:45:52.488] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 15:45:52.499] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 15:46:56.165] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 15:46:56.169] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 15:46:56.172] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 15:46:56.173] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 15:46:56.175] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 15:46:56.183] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:46:56.183] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 15:46:56.183] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:46:56.183] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 15:46:56.184] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:46:56.184] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 15:46:56.195] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:46:56.195] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 15:46:57.339] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139798726833984:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139798726833984:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139798726833984:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:46:57.339] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139798726833984:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139798726833984:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139798726833984:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 15:46:57.446] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:46:57.446] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 15:46:57.448] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 15:46:57.448] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 15:46:57.448] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 15:46:57.470] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 16:09:29.965] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 16:09:29.967] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 16:09:29.968] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 16:09:29.969] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 16:09:29.970] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 16:09:29.973] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:09:29.973] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:09:29.973] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:09:29.973] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:09:29.973] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:09:29.973] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:09:29.978] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:09:29.978] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:09:30.813] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140287157880640:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140287157880640:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140287157880640:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:09:30.813] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140287157880640:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140287157880640:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140287157880640:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:09:30.893] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:09:30.893] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:09:30.894] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 16:09:30.894] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 16:09:30.894] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 16:09:30.906] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 16:12:35.693] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 16:12:35.699] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 16:12:35.700] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 16:12:35.702] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 16:12:35.703] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 16:12:35.707] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:12:35.707] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:12:35.707] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:12:35.707] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:16:45.061] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 16:16:45.066] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 16:16:45.069] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 16:16:45.070] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 16:16:45.070] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 16:16:45.074] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:16:45.074] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:16:45.075] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:22:40.679] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 16:22:40.680] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 16:22:40.681] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 16:22:40.682] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 16:22:40.682] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 16:22:40.685] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:22:40.685] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:22:40.685] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:22:40.685] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:22:40.685] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:22:40.685] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:22:40.690] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:22:40.690] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:22:41.504] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139641496618816:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139641496618816:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139641496618816:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:22:41.504] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 139641496618816:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+139641496618816:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+139641496618816:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:22:41.577] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:22:41.577] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:22:41.578] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 16:22:41.579] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 16:22:41.579] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 16:22:41.594] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 16:31:48.599] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 16:31:48.604] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 16:31:48.605] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 16:31:48.606] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 16:31:48.607] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 16:31:48.609] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:31:48.609] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 16:31:48.609] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:31:48.609] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 16:31:48.610] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:31:48.610] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 16:31:48.615] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:31:48.615] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 16:31:49.657] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140281337710400:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:827:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:31:49.657] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140281337710400:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:827:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 16:31:49.742] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:31:49.742] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 16:31:49.743] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 16:31:49.744] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 16:31:49.744] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 16:31:49.757] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2021-07-13 17:02:07.661] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2021-07-13 17:02:07.663] [DEBUG] Platform - Setting admin organization enrolment files
+[2021-07-13 17:02:07.663] [DEBUG] Platform - Creating client [[object Object]] >>  first-network
+[2021-07-13 17:02:07.663] [DEBUG] FabricUtils - ************ Initializing fabric client for [first-network]************
+[2021-07-13 17:02:07.664] [DEBUG] FabricClient - Client configuration [first-network]  ...  this.client_config  { name: 'first-network',
+  profile: './connection-profile/first-network.json' }
+[2021-07-13 17:02:07.666] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 17:02:07.666] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2021-07-13 17:02:07.667] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 17:02:07.667] [INFO] FabricGateway - peer0.org1.example.com
+[2021-07-13 17:02:07.687] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 17:02:07.687] [INFO] FabricGateway - /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem  
+adminPrivateKeyPath  /root/go/src/go-sdk-gm/artifacts/channel2/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/299722949ae213fad662dbf07e9c927f83e7f26d1e24a7da55334e8cc371a561_sk
+[2021-07-13 17:02:07.692] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 17:02:07.692] [INFO] FabricGateway - true ' caURL[0] ' [ 'https://127.0.0.1:7054' ]
+[2021-07-13 17:02:08.550] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140222719264576:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140222719264576:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140222719264576:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 17:02:08.550] [ERROR] FabricGateway - Error instantiating FabricCAServices  Error: Calling enrollment endpoint failed with error [Error: write EPROTO 140222719264576:error:100D7010:elliptic curve routines:ECKEY_PUB_DECODE:EC lib:../deps/openssl/openssl/crypto/ec/ec_ameth.c:202:
+140222719264576:error:0B07707D:x509 certificate routines:X509_PUBKEY_get:public key decode error:../deps/openssl/openssl/crypto/asn1/x_pubkey.c:154:
+140222719264576:error:140900EF:SSL routines:ssl3_get_server_certificate:unable to find public key parameters:../deps/openssl/openssl/ssl/s3_clnt.c:1313:
+]
+    at ClientRequest.<anonymous> (/home/csquan/work/blockchain-explorer/node_modules/fabric-ca-client/lib/FabricCAClientImpl.js:892:12)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at TLSSocket.socketErrorListener (_http_client.js:387:9)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at onwriteError (_stream_writable.js:418:12)
+    at onwrite (_stream_writable.js:440:5)
+    at _destroy (internal/streams/destroy.js:39:7)
+    at TLSSocket.Socket._destroy (net.js:574:3)
+[2021-07-13 17:02:08.621] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 17:02:08.621] [ERROR] FabricGateway -  Error: identity 'admin' isn't enrolled, or loaded
+[2021-07-13 17:02:08.622] [ERROR] FabricClient - { ExplorerError: [ 'Failed to create wallet, please check the configuration, and valid file paths' ]
+    at FabricGateway.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:147:10)
+    at <anonymous>
+  name: 'ExplorerError',
+  message: '[ \'Failed to create wallet, please check the configuration, and valid file paths\' ]' }
+[2021-07-13 17:02:08.622] [DEBUG] FabricClient - this.defaultPeer  {}
+[2021-07-13 17:02:08.622] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/csquan/work/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+[2021-07-13 17:02:08.636] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
