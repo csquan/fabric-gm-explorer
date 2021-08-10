@@ -80,6 +80,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getPeerData(channel_genesis_hash) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const peerArray = [];
 		const c1 = await this.sql
 			.getRowsBySQlNoCondition(`select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
@@ -129,6 +130,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getTxPerChaincodeGenerate(channel_genesis_hash) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const txArray = [];
 		const c = await this.sql
 			.getRowsBySQlNoCondition(`select  c.name as chaincodename,channel.name as channelName ,c.version as version,c.channel_genesis_hash
@@ -155,6 +157,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getOrgsData(channel_genesis_hash) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const orgs = [];
 		const rows = await this.sql.getRowsBySQlNoCondition(
 			`select distinct on (mspid) mspid from peer  where channel_genesis_hash='${channel_genesis_hash}'`
@@ -174,6 +177,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getTxPerChaincode(channel_genesis_hash, cb) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		try {
 			const txArray = await this.getTxPerChaincodeGenerate(channel_genesis_hash);
 			return cb(txArray);
@@ -191,6 +195,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getStatusGenerate(channel_genesis_hash) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		let chaincodeCount = await this.getChaincodeCount(channel_genesis_hash);
 		if (!chaincodeCount) {
 			chaincodeCount = 0;
@@ -227,6 +232,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getStatus(channel_genesis_hash, cb) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		try {
 			const data = await this.getStatusGenerate(channel_genesis_hash);
 			return cb(data);
@@ -245,6 +251,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	async getPeerList(channel_genesis_hash, cb) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		try {
 			const peerArray = await this.getPeerData(channel_genesis_hash);
 			if (cb) {
@@ -283,6 +290,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByMinute(channel_genesis_hash, hours) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerMinute = ` with minutes as (
             select generate_series(
               date_trunc('min', now()) - '${hours}hour'::interval,
@@ -310,6 +318,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByHour(channel_genesis_hash, day) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerHour = ` with hours as (
             select generate_series(
               date_trunc('hour', now()) - '${day}day'::interval,
@@ -337,6 +346,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByDay(channel_genesis_hash, days) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerDay = ` with days as (
             select generate_series(
               date_trunc('day', now()) - '${days}day'::interval,
@@ -364,6 +374,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByWeek(channel_genesis_hash, weeks) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerWeek = ` with weeks as (
             select generate_series(
               date_trunc('week', now()) - '${weeks}week'::interval,
@@ -391,6 +402,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByMonth(channel_genesis_hash, months) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerMonth = ` with months as (
             select generate_series(
               date_trunc('month', now()) - '${months}month'::interval,
@@ -419,6 +431,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByYear(channel_genesis_hash, years) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerYear = ` with years as (
             select generate_series(
               date_trunc('year', now()) - '${years}year'::interval,
@@ -447,6 +460,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByMinute(channel_genesis_hash, hours) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerMinute = ` with minutes as (
             select generate_series(
               date_trunc('min', now()) - '${hours} hour'::interval,
@@ -474,6 +488,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByHour(channel_genesis_hash, days) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerHour = ` with hours as (
             select generate_series(
               date_trunc('hour', now()) - '${days}day'::interval,
@@ -501,6 +516,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByDay(channel_genesis_hash, days) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerDay = `  with days as (
             select generate_series(
               date_trunc('day', now()) - '${days}day'::interval,
@@ -528,6 +544,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByWeek(channel_genesis_hash, weeks) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerWeek = ` with weeks as (
             select generate_series(
               date_trunc('week', now()) - '${weeks}week'::interval,
@@ -555,6 +572,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByMonth(channel_genesis_hash, months) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerMonth = `  with months as (
             select generate_series(
               date_trunc('month', now()) - '${months}month'::interval,
@@ -582,6 +600,7 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getBlocksByYear(channel_genesis_hash, years) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerYear = ` with years as (
             select generate_series(
               date_trunc('year', now()) - '${years}year'::interval,
@@ -608,11 +627,12 @@ class MetricService {
 	 * @memberof MetricService
 	 */
 	getTxByOrgs(channel_genesis_hash) {
+		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		const sqlPerOrg = ` select count(creator_msp_id), creator_msp_id
       from transactions
       where channel_genesis_hash ='${channel_genesis_hash}'
       group by  creator_msp_id`;
-
+		console.log(sqlPerOrg)
 		return this.sql.getRowsBySQlQuery(sqlPerOrg);
 	}
 
