@@ -53,7 +53,7 @@ const Peers = ({ peerList }) => {
       ),
       filterAll: true,
     },
-    {
+   /* {
       Header: 'Ledger Height',
       columns: [
         {
@@ -81,7 +81,7 @@ const Peers = ({ peerList }) => {
         {
           Header: 'Unsigned',
           id: 'ledger_height_unsigned',
-          accessor: d => d.ledger_height_unsigned.toString(),
+          //accessor: d => d.ledger_height_unsigned.toString(),
           filterMethod: (filter, rows) => matchSorter(
             rows,
             filter.value,
@@ -91,7 +91,7 @@ const Peers = ({ peerList }) => {
           filterAll: true,
         },
       ],
-    },
+    },*/
   ];
 
   return (
