@@ -242,7 +242,7 @@ export class Blocks extends Component {
         { threshold: matchSorter.rankings.SIMPLEMATCH },
       ),
       filterAll: true,
-      width: 150,
+      width: 30,
     },
     {
       Header: 'Channel Name',
@@ -265,9 +265,9 @@ export class Blocks extends Component {
         { threshold: matchSorter.rankings.SIMPLEMATCH },
       ),
       filterAll: true,
-      width: 150,
+      width: 50,
     },
-    {
+   /* {
       Header: 'Data Hash',
       accessor: 'datahash',
       className: classes.hash,
@@ -278,7 +278,7 @@ export class Blocks extends Component {
               {row.value}
             </div>
             {' '}
-            {row.value.slice(0, 6)}
+            {}
             {' '}
             {!row.value ? '' : '... '}
           </ul>
@@ -292,7 +292,7 @@ export class Blocks extends Component {
         { threshold: matchSorter.rankings.SIMPLEMATCH },
       ),
       filterAll: true,
-    },
+    },*/
     {
       Header: 'Block Hash',
       accessor: 'blockhash',
@@ -305,13 +305,9 @@ export class Blocks extends Component {
             onClick={() => this.handleDialogOpenBlockHash(row.value)}
             href="#/blocks"
           >
-            <div className={classes.fullHash} id="showTransactionId">
+            <div className={classes.fullHash} id="showTransactionId" style={{ textAlign: "center",overflow:"hidden",whiteSpace:"nowrap",textOverflow: "ellipsis",position:"relative !important",textalign:"center",display:"block"}}>
               {row.value}
             </div>
-            {' '}
-            {row.value.slice(0, 6)}
-            {' '}
-            {!row.value ? '' : '... '}
           </a>
           {' '}
         </span>
@@ -326,7 +322,7 @@ export class Blocks extends Component {
     },
     {
       Header: 'Previous Hash',
-      accessor: 'prehash',
+      accessor: 'prev_blockhash',
       className: classes.hash,
       Cell: row => (
         <span>
@@ -335,13 +331,9 @@ export class Blocks extends Component {
             onClick={() => this.handleDialogOpenBlockHash(row.value)}
             href="#/blocks"
           >
-            <div className={classes.fullHash} id="showTransactionId">
+            <div className={classes.fullHash} id="showTransactionId"  style={{ textAlign: "center",overflow:"hidden",whiteSpace:"nowrap",textOverflow: "ellipsis",position:"relative !important",textalign:"center",display:"block"}}>
               {row.value}
             </div>
-            {' '}
-            {row.value.slice(0, 6)}
-            {' '}
-            {!row.value ? '' : '... '}
           </ul>
           {' '}
         </span>
@@ -349,7 +341,7 @@ export class Blocks extends Component {
       filterMethod: (filter, rows) => matchSorter(
         rows,
         filter.value,
-        { keys: ['prehash'] },
+        { keys: ['prev_blockhash'] },
         { threshold: matchSorter.rankings.SIMPLEMATCH },
       ),
       filterAll: true,
@@ -369,6 +361,9 @@ export class Blocks extends Component {
                   overflow: 'hidden',
                   whiteSpace: 'nowrap',
                   textOverflow: 'ellipsis',
+		  position: 'relative !important',
+		  textalign: 'center',
+	          display: 'block',
                 }}
               >
                 <a
