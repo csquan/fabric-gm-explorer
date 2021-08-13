@@ -110,7 +110,7 @@ class CRUDService {
 		channel_genesis_hash = '573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808'
 		const sqlBlockTxList = `select a.* from  (
          select (select c.name from channel c where c.channel_genesis_hash =
-         '${channel_genesis_hash}' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prev_blockhash,blocks.createdt,(
+         '${channel_genesis_hash}' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prev_blockhash,blocks.createdt + '8 hour' as createdt,(
          SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum ${blockTxListSql} and
          channel_genesis_hash = '${channel_genesis_hash}' and createdt between '${from}' and '${to}') from blocks where
          blocks.channel_genesis_hash ='${channel_genesis_hash}' and blocknum >= 0 and blocks.createdt between '${from}' and '${to}'
