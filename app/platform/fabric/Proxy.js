@@ -121,7 +121,7 @@ class Proxy {
 		const peers = [];
 
 		for (const node of nodes) {
-			if (node.peer_type === 'PEER') {
+		//	if (node.peer_type === 'PEER') {
 				node.status = 'DOWN';
 				if (discover_results && discover_results.peers_by_org) {
 					const org = discover_results.peers_by_org[node.mspid];
@@ -134,7 +134,7 @@ class Proxy {
 					}
 				}
 				peers.push(node);
-			}
+		//	}
 		}
 
 		logger.debug('getPeersStatus >> %j', peers.length);

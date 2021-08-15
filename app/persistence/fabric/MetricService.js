@@ -40,7 +40,7 @@ class MetricService {
 	getPeerlistCount(channel_genesis_hash) {
 		channel_genesis_hash = "573f3ff5686831e322cb1c02769ebd5519ec7b3618cabcc1dca1705a6a7e1808"
 		return this.sql.getRowsBySQlCase(
-			`select count(1) c from peer where channel_genesis_hash='${channel_genesis_hash}' and peer_type='PEER' `
+			`select count(1) c from peer where channel_genesis_hash='${channel_genesis_hash}'`
 		);
 	}
 
