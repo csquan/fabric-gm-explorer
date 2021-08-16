@@ -76,15 +76,18 @@ class CRUDService {
 	 * @memberof CRUDService
 	 */
 	getTxList(channel_genesis_hash, blockNum, txid, from, to, orgs) {
-		let txListSql = '';
-		if (orgs && orgs !== '') {
-			txListSql = `and t.creator_msp_id in (${orgs})`;
-		}/*
+		/*
 		const sqlTxList = ` select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
        inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= ${blockNum} and t.id >= ${txid} ${txListSql} and
        t.channel_genesis_hash = '${channel_genesis_hash}'  and t.createdt between '${from}' and '${to}'  order by  t.id desc`;
 		*/
-		const sqlTxList = 'select creator_msp_id,txhash,type,chaincodename,createdt from transactions'
+		let  sqlTxList = 'select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash'
+
+		if (orgs && orgs !== '') {
+			sqlTxList = sqlTxList + ` where t.creator_msp_id in (${orgs});`;
+		}
+		sqlTxList = sqlTxList + `;`;
+		
 		console.log(sqlTxList)
 		return this.sql.getRowsBySQlQuery(sqlTxList);
 	}
@@ -390,10 +393,14 @@ class CRUDService {
 	 * @memberof CRUDService
 	 */
 	async getChannelsInfo(peerid) {
-		const channels = await this.sql
+		console.log("+++getChannelsInfo+++")
+	/*	const channels = await this.sql
 			.getRowsBySQlNoCondition(` select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
         peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='${peerid}' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name `);
-
+*/
+		const channels = await this.sql
+		                        .getRowsBySQlNoCondition(`select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c;`);
+	        console.log(channels)
 		return channels;
 	}
 
