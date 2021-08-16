@@ -169,12 +169,13 @@ class Proxy {
 		const currentchannels = [];
 		for (const channel of channels) {
 			const channel_genesis_hash = client.getChannelGenHash(channel.channelname);
-			if (
+		/*	if (
 				channel_genesis_hash &&
 				channel_genesis_hash === channel.channel_genesis_hash
 			) {
 				currentchannels.push(channel);
-			}
+			}*/
+			currentchannels.push(channel);
 		}
 		logger.debug('getChannelsInfo >> %j', currentchannels);
 		return currentchannels;
