@@ -76,7 +76,7 @@ export class TransactionView extends Component {
 
 	render() {
 		const { transaction, classes } = this.props;
-		if (transaction && !transaction.read_set) {
+		/*if (transaction) {
 			return (
 				<Modal>
 					{modalClasses => (
@@ -104,7 +104,7 @@ export class TransactionView extends Component {
 					)}
 				</Modal>
 			);
-		}
+		}*/
 		if (transaction) {
 			return (
 				<Modal>
@@ -139,52 +139,20 @@ export class TransactionView extends Component {
 												</td>
 											</tr>
 											<tr>
-												<th>Validation Code:</th>
-												<td>{transaction.validation_code}</td>
-											</tr>
-											<tr>
-												<th>Payload Proposal Hash:</th>
-												<td>{transaction.payload_proposal_hash}</td>
-											</tr>
-											<tr>
 												<th>Creator MSP:</th>
 												<td>{transaction.creator_msp_id}</td>
 											</tr>
-											<tr>
-												<th>Endoser:</th>
-												<td>{transaction.endorser_msp_id}</td>
-											</tr>
+						                                        <tr>
+						                                                <th>Channel Name:</th>
+						                                                <td>{transaction.channelname}</td>
+						                                        </tr>
 											<tr>
 												<th>Chaincode Name:</th>
 												<td>{transaction.chaincodename}</td>
 											</tr>
 											<tr>
-												<th>Type:</th>
-												<td>{transaction.type}</td>
-											</tr>
-											<tr>
 												<th>Time:</th>
 												<td>{transaction.createdt}</td>
-											</tr>
-											<tr>
-												<th style={reads}>Reads:</th>
-												<td className={classes.JSONtree}>
-													<JSONTree
-														data={transaction.read_set}
-														theme={readTheme}
-														invertTheme={false}
-													/>
-												</td>
-											</tr>
-											<tr>
-												<th style={writes}>Writes:</th>
-												<td className={classes.JSONtree}>
-													<JSONTree
-														data={transaction.write_set}
-														theme={writeTheme}
-														invertTheme={false}
-													/>
-												</td>
 											</tr>
 										</tbody>
 									</Table>
