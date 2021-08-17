@@ -267,6 +267,18 @@ export class Blocks extends Component {
       filterAll: true,
       width: 50,
     },
+    {
+      Header: 'created time',
+      accessor: 'createdt',
+      filterMethod: (filter, rows) => matchSorter(
+	rows,
+	filter.value,
+	{ keys: ['createdt'] },
+	{ threshold: matchSorter.rankings.SIMPLEMATCH },
+      ),
+      filterAll: true,
+      width: 200,
+    },
    /* {
       Header: 'Data Hash',
       accessor: 'datahash',
@@ -309,7 +321,6 @@ export class Blocks extends Component {
               {row.value}
             </div>
           </a>
-          {' '}
         </span>
       ),
       filterMethod: (filter, rows) => matchSorter(
@@ -326,7 +337,7 @@ export class Blocks extends Component {
       className: classes.hash,
       Cell: row => (
         <span>
-          <ul
+          <a
             className={classes.partialHash}
             onClick={() => this.handleDialogOpenBlockHash(row.value)}
             href="#/blocks"
@@ -334,8 +345,7 @@ export class Blocks extends Component {
             <div className={classes.fullHash} id="showTransactionId"  style={{ textAlign: "center",overflow:"hidden",whiteSpace:"nowrap",textOverflow: "ellipsis",position:"relative !important",textalign:"center",display:"block"}}>
               {row.value}
             </div>
-          </ul>
-          {' '}
+          </a>
         </span>
       ),
       filterMethod: (filter, rows) => matchSorter(

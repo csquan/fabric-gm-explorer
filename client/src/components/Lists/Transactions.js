@@ -252,7 +252,7 @@ export class Transactions extends Component {
         ),
         filterAll: true,
       },
-      {
+      /*{
         Header: 'Type',
         accessor: 'type',
         filterMethod: (filter, rows) => matchSorter(
@@ -262,7 +262,7 @@ export class Transactions extends Component {
           { threshold: matchSorter.rankings.SIMPLEMATCH },
         ),
         filterAll: true,
-      },
+      },*/
       {
         Header: 'Chaincode',
         accessor: 'chaincodename',
